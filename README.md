@@ -1,1 +1,1 @@
-# memories_app
+# memories_app_server
