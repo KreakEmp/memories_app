@@ -1,0 +1,27 @@
+# Local development changes :
+    In Client side:
+    clien/src/api/index.js file change the url 
+    const url = 'http://localhost:5000/posts';  //for local dev testing
+    
+    In Server side:
+        in .env file add PORT=5000
+
+# Production related changes :
+    In Client side:
+    clien/src/api/index.js file change the url 
+    const url = 'http://localhost:5000/posts';  //for local dev testing
+    
+    In Server side:
+        in .env file add PORT=5000
+
+
+# Deployment Process:
+    Client : 
+        - build the front end client folder with 'npm run build' command
+        - deploy build file at netlify.com
+        - can change the domain name in the domain settings
+
+    Server:
+        - remove the PORT = 5000 line in the .env file
+        - add a .gitignore and add node_module to it
+        - follow the process given here:  https://dashboard.heroku.com/apps/memoriesapp001/deploy/heroku-git
